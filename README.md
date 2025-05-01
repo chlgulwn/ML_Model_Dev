@@ -11,28 +11,28 @@
 
 ## 모델링 과정 요약
 
-1. EDA 및 전처리
+### 1. EDA 및 전처리
    - 이상치 제거 (IQR 이용)
    - 피처 선택 (SelectKBest, 20개)
    - Train/Test 분할
    - 스케일링 (StandardScaler)
 
-2. 모델링
+### 2. 모델링
    - Logistic Regression
    - Support Vector Machine 
    - KNeighborsClassifier
    - Random Forest
    - Multi Layer Perceptron 
 
-3. 성능 비교
+### 3. 성능 비교
    - 정확도, F1 점수, 5-Fold Cross Validation
 
-4. 하이퍼파라미터 튜닝 (성능 높았던 두 모델 기반)
+### 4. 하이퍼파라미터 튜닝 (성능 높았던 두 모델 기반)
    - GridSearchCV 사용
    - Logistic Regression, MLP 최적화
 
 
-## 5가지 모델 중 성능이 좋았던 Logistic Regression과 MLP를 가지고 Parameter Optimization 
+### <5가지 모델 중 성능이 좋았던 Logistic Regression과 MLP를 가지고 Parameter Optimization한 결과> 
 
 | 모델                 | Test F1 score | Best Train F1 score |
 |---------------------|---------------|----------------------|
@@ -42,6 +42,9 @@
 -> 최종적으로 해석력과 안정성을 고려하여 `Logistic Regression` 선택
 
 
+### 5. 최종 테스트셋 결과 출력
+   - 안정적으로 성능이 좋아 선택한 'Logistic Regression'을을 test dataset에 적용
+   - 실제 레이블과 비교해보고, 예측의 정확도 등을 파악
 
 
 
