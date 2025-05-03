@@ -39,11 +39,11 @@
 | Logistic Regression |     0.960     |        0.979         |
 | MLP Classifier      |     0.968     |        0.985         |
 
--> 최종적으로 해석력과 안정성을 고려하여 `Logistic Regression` 선택
+-> 최종 모델로 더 높은 test F1 score를 기록한 `Multi Layer Perceptron(MLP)` 선택
 
 
-### 5. 최종 테스트셋 결과 출력
-   - 안정적으로 성능이 좋아 선택한 'Logistic Regression'을을 test dataset에 적용
+### 5. 최종 테스트셋 결과 출력 
+   - 안정적으로 성능이 좋아 선택한 'MLP'를 test dataset에 적용
    - 실제 레이블과 비교해보고, 예측의 정확도 등을 파악
 
 
