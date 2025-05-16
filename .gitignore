@@ -24,3 +24,9 @@ Thumbs.db
 
 # data
 data/
+
+# AutoML 출력물 중 중요한 것만 포함 
+AutoML_1/*
+!AutoML_1/leaderboard.csv
+!AutoML_1/ldb_performance.png
+!AutoML_1/params.json
